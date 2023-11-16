@@ -1,0 +1,111 @@
+# Site settings
+title: Yesl Koh # site title
+description: >- # site description
+  Yesl Koh is a technology enthusiast who loves to write about the intersection of people
+  and technology. She now works at TikTok as a partner engineer and promoting her new book.
+lang: en-US # default lang
+timezone: Asia/Singapore # set your timezone
+image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/yskoh/yskoh.github.io # site repo [optional]
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: Yesl Koh # author name
+  bio: >- # tell to the world
+    Hi! <br \><br \>
+
+    I venture out to undertake challenges and aspires to grow with the community by
+    sharing my  experiences. <br \><br \>
+
+    I’ve worked with products across maturity stages ranging from 500 DAU (Daily Active Users)
+    to products with 2.76 billion DAU. My background includes various sectors and companies
+    of all sizes such as Meta and Naver Corporation. Currently, I’m the
+    Chief Growth Officer (interim) and Product Operations Lead at Redfin Tech. <br \><br \>
+
+    I also enjoy promoting growth amongst my peers by supporting them with mentorship.
+    Due to my contributions in community, I was shortlisted as candidate for
+    Advocate of the Year, Women in IT Asia 2022. My book on Gen-Z Developers is soon to be
+    published and in bookstores by December 2023. <br \><br \>
+
+    <img class="book-image" src="/assets/img/book.png" />
+  name-kr: 고 예슬 # author name
+  bio-kr: >- # tell to the world
+    탐험을 좋아하고 호기심이 많은 개발자. 심리학을 전공한 후 상상하는 것을 직접 만들 수 있는 코딩에 흥미가 생겨 개발자로 커리어를 시작하였습니다. 위메프, 네이버, 메타의 아시아 본부를 거쳐 현재는 싱가포르 스타트업에서 최고 성장 책임자(CGO) 대행과 프로덕트 오퍼레이션 그룹 리드로 프로덕트 성장의 방향성을 설정하고 있습니다. 공유를 통해 함께 성장하는 과정을 지향합니다. <br \><br \>
+
+    <img class="book-image" src="/assets/img/book.png" />
+  username: yskoh # general username
+  github: yskoh # github username
+  # twitter: twitter_username # twitter username
+  # facebook: facebook_username # facebook username
+  email: me AT yeslkoh.com # email adress
+  avatar: /assets/img/avatar.jpg # change with your own avatar
+
+# URL settings
+url: "https://yeslkoh.com" #
+baseurl:
+permalink: /:title/
+google_analytics: # leave it blank if not wish
+fb_appid:
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 5
+
+# Build settings
+# theme: klise
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
